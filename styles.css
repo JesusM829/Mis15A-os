@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/sparkles.png'); /* Fondo con brillo */
+    background-size: cover;
+}
+
+.invitation-card {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    background-image: url('/src/assets/img/Castillo.png'); /* Fondo del castillo */
+    background-size: 400px; /* Tamaño del castillo aumentado */
+    background-position: bottom center; /* Coloca el castillo al centro abajo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Finaliza visible */
+    }
+}
+
+.header h1, .header h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #d4af37; /* Dorado */
+    font-style: italic; /* Aplicar cursiva a los títulos */
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 1s; /* Retraso para el nombre */
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.crown {
+    width: 150px; /* Tamaño de la corona aumentado */
+    margin-bottom: 15px;
+    animation: shine 1.5s infinite alternate; /* Animación de brillo */
+}
+
+@keyframes shine {
+    0% {
+        filter: drop-shadow(0 0 5px #d4af37); /* Brillo inicial */
+    }
+    100% {
+        filter: drop-shadow(0 0 20px #d4af37); /* Brillo máximo */
+    }
+}
+
+.name {
+    font-size: 2em;
+    color: #d4af37;
+    font-style: italic; /* Aplicar cursiva al nombre */
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 2s; /* Retraso para el nombre */
+}
+
+.message {
+    margin: 20px 0;
+    font-style: italic; /* Aplicar cursiva a la descripción */
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 3s; /* Retraso para el mensaje */
+}
+
+.parents {
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 4s; /* Retraso para los padres */
+}
+
+.details {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 50px;
+}
+
+.dress-code {
+    text-align: center; /* Alinear al centro */
+    font-style: italic; /* Aplicar cursiva al código de vestimenta */
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 5s; /* Retraso para el código de vestimenta */
+}
+
+.colors {
+    display: flex; /* Flexbox para alinear los círculos */
+    justify-content: center; /* Centrar los círculos */
+    margin-top: 10px; /* Espacio entre el texto y los círculos */
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px; /* Espacio entre círculos */
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 6s; /* Retraso para los círculos */
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.date {
+    text-align: center; /* Centrar la fecha */
+    flex-grow: 1; /* Permite que este div crezca para ocupar espacio */
+    font-style: italic; /* Aplicar cursiva a la fecha */
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 7s; /* Retraso para la fecha */
+}
+
+.location {
+    text-align: center; /* Centrar el texto de ubicación */
+    font-style: italic; /* Aplicar cursiva a la ubicación */
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 8s; /* Retraso para la ubicación */
+}
+
+.location-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.2em;
+    opacity: 0; /* Inicialmente oculto para la animación de entrada */
+    animation: fadeIn 2s forwards; /* Animación de aparición */
+    animation-delay: 9s; /* Retraso para el enlace de ubicación */
+}
+
+.location-link:hover {
+    text-decoration: underline;
+}
+
+.date h3 {
+    font-size: 2.5em;
+}

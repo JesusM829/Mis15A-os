@@ -1,0 +1,21 @@
+/* App.css */
+
+/* Estilo general para la tarjeta de invitación */
+.invitation {
+  text-align: center; /* Centra el texto */
+  margin: 50px; /* Margen superior e inferior */
+}
+
+/* Estilo para el texto de la invitación */
+.invitation-text {
+  font-size: 24px; /* Tamaño de fuente inicial */
+  color: #333; /* Color inicial del texto */
+  transition: color 0.3s ease, font-size 0.3s ease; /* Transiciones para color y tamaño */
+}
+
+/* Efecto al pasar el mouse sobre el texto */
+.invitation-text:hover {
+  color: #ff5733; /* Color del texto al pasar el mouse */
+  font-size: 28px; /* Aumenta el tamaño de fuente al pasar el mouse */
+}
+
