@@ -87,9 +87,15 @@ h2 {
     animation-delay: 3s; /* Retraso para el mensaje */
 }
 
-.parents {
-    font-style: italic;
-    margin-top: 10px;
+/* Estilos para "Padres" y "Maribel Arévalo & César Serrano" en cursiva */
+.parents-section {
+    margin-top: 20px;
+}
+
+.parents, .parents-names {
+    font-style: italic; /* Aplicar cursiva */
+    margin-top: 5px;
+    font-size: 1.1em;
     opacity: 0; /* Inicialmente oculto para la animación de entrada */
     animation: fadeIn 2s forwards; /* Animación de aparición */
     animation-delay: 4s; /* Retraso para los padres */
@@ -127,16 +133,21 @@ h2 {
     animation-delay: 6s; /* Retraso para los círculos */
 }
 
+/* Lluvia de sobres */
+.rain-envelope {
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 7s;
+}
+
 .red {
     background-color: red;
 }
 
 .blue {
     background-color: blue;
-}
-
-.green {
-    background-color: green;
 }
 
 .date {
@@ -166,6 +177,26 @@ h2 {
 }
 
 .location-link:hover {
+    text-decoration: underline;
+}
+
+/* Confirmar Asistencia */
+.confirm-section {
+    margin-top: 15px;
+}
+
+.confirm-assistance {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.confirm-link {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #007BFF;
+}
+
+.confirm-link:hover {
     text-decoration: underline;
 }
 
